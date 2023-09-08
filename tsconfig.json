@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "removeComments": true,//编译去除注释
+    "noEmit": true,
+    "baseUrl": "./",
+    "declaration":true,
+    "declarationDir":"dist/",
+    "rootDir":"./"
+  },
+  "include": ["./*.ts","./*.d.ts","plugins/*.ts"],
+  "exclude": ["node_moduls/**"],
+}

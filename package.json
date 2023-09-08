@@ -1,0 +1,30 @@
+{
+  "name": "rollup-plugins-template",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "aaronumen",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^10.0.1",
+    "rollup": "^3.8.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3",
+    "vue": "^3.2.45"
+  }
+}
